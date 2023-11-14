@@ -1,0 +1,39 @@
+.custom-form {
+  font-family: var(--Font-1);
+  &__search {
+    position: relative;
+    border-radius: 6px;
+    background: var(--White);
+    padding: 10px;
+    backdrop-filter: blur(11px);
+    display: flex;
+    align-items: center;
+    font-family: var(--Font-1);
+    input {
+      border: none;
+      outline: none;
+      padding: 0;
+      flex-grow: 2;
+      line-height: 1;
+      color: var(--Black);
+      font-family: var(--Font-1);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 350;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      flex-shrink: 0;
+      margin-left: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
