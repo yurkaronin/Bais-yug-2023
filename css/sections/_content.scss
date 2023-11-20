@@ -1,0 +1,22 @@
+.content {
+  color: #006634;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  padding-bottom: 0;
+  &__two {
+    columns: 2;
+    column-gap: 24px;
+  }
+  &__one {
+    columns: 1;
+    max-width: 720px;
+    margin-right: auto;
+  }
+  p {
+    margin: 0;
+  }
+  p + p {
+    margin-top: 0.5rem
+  }
+}

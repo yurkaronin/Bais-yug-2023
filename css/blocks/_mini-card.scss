@@ -1,0 +1,50 @@
+.mini-card {
+  &__link {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    background: var(--White);
+    padding: 30px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__subtitle {
+    display: block;
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__text {
+    display: block;
+    margin: 0;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+  &__details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      color: var(--Black);
+      font-family: Circe;
+      font-size: 32px;
+      font-weight: 400;
+      gap: 12px;
+    }
+  }
+  .button {
+    max-width: 100%;
+  }
+}

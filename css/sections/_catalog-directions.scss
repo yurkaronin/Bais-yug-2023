@@ -1,0 +1,46 @@
+.catalog-directions {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.direction-card {
+  border-radius: 10px;
+  background: #2a8d3e;
+  padding: 60px 50px 40px;
+  display: flex;
+    flex-direction: column;
+  &__name {
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--White);
+    font-size: 48px;
+    font-weight: 400;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: auto;
+    li {
+      margin-bottom: 12px;
+      color: var(--White);
+      font-size: 28px;
+      font-weight: 400;
+    }
+  }
+  &--two {
+    background: #006634;
+  }
+  &__icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-left: auto;
+  }
+}

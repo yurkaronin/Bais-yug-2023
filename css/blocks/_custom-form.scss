@@ -2,17 +2,16 @@
   font-family: var(--Font-1);
   &__search {
     position: relative;
-    border-radius: 6px;
     background: var(--White);
-    padding: 10px;
     backdrop-filter: blur(11px);
     display: flex;
     align-items: center;
     font-family: var(--Font-1);
+    border-radius: 6px;
+    background: #f5f5f5;
     input {
       border: none;
       outline: none;
-      padding: 0;
       flex-grow: 2;
       line-height: 1;
       color: var(--Black);
@@ -20,16 +19,21 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 350;
+      background: #f5f5f5;
+      padding: 10px;
+      height: 43px;
+      border-radius: 4px;
     }
 
     button {
       border: none;
       background-color: transparent;
       flex-shrink: 0;
-      margin-left: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      padding-right: 16px;
 
       svg {
         flex-shrink: 0;

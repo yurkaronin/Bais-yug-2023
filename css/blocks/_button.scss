@@ -15,7 +15,7 @@
   flex-shrink: 0;
 
   color: var(--White);
-  font-family: inherit;
+  font-family: var(--Font-1);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -25,6 +25,7 @@
 
   &:hover {
     background-color: var(--VibrantGreen);
+    color: var(--White);
   }
 
   &--icon-left {
@@ -38,6 +39,11 @@
     span {
       margin-left: 10px;
     }
+  }
+
+  &--mod {
+    background-color: var(--SoftGreenGray);
+    color: var(--DarkGreen);
   }
 
   @media (max-width: 767px) {}
