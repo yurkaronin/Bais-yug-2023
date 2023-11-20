@@ -8,9 +8,13 @@
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
 
     padding-top: 130px;
     padding-bottom: 240px;
+  }
+  &__right {
+    padding-top: 15px;
   }
 
   &__list {
@@ -31,6 +35,7 @@
   &__text {
     margin: 0;
     font-size: 32px;
+    line-height: 1.7;
     font-weight: 300;
   }
   li:first-of-type &__text {

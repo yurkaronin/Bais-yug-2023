@@ -16,7 +16,6 @@
   }
   &__title {
     margin: 0;
-    margin-bottom: 24px;
     font-size: 48px;
     font-weight: 400;
 
@@ -24,6 +23,7 @@
   &__link {
     text-decoration: none;
     display: block;
+    margin-bottom: 10px;
   }
   &__meta {
     font-size: 20px;
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     gap: 16px;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   &__text {
     margin: 0;

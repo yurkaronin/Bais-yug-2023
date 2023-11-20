@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector('.reviews .mySwiper')) {
     console.log('Слайдер с отзывами есть!');
     var homeScreenSwiper = new Swiper(".reviews .mySwiper", {
-      slidesPerView: 2.1,
+      slidesPerView: 2.3,
       spaceBetween: 25
     });
   };
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, {
         iconLayout: 'default#image',
         iconImageHref: './img/map/balun-1.svg',
-        iconImageSize: [42, 56],
+        iconImageSize: [95, 95],
         iconImageOffset: [-19, -44]
       });
 
