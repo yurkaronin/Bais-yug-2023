@@ -133,4 +133,13 @@
   .social-list {
     margin-left: auto;
   }
+
+  @media (min-width: 1921px) {
+    &__top-grid {
+      padding-inline: 150px;
+    }
+    &__bottom {
+      padding-inline: 150px;
+    }
+  }
 }

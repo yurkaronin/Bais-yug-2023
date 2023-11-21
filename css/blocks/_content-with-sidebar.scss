@@ -1,0 +1,23 @@
+.content-with-sidebar {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: flex-start;
+
+  &__left {
+    border-radius: 10px;
+    background: var(--White);
+    padding: 150px 50px;
+    grid-column: span 7;
+  }
+  &__right {
+    border-radius: 10px;
+    background: var(--White);
+    padding: 50px 24px;
+    grid-column: span 3;
+  }
+  &__scroll {
+    max-height: 755px;
+    overflow-y: auto;
+  }
+}

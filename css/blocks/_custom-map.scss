@@ -28,8 +28,9 @@
   }
 
   &__image {
-    z-index: 2;
+    z-index: 0;
     position: relative;
+    pointer-events: none;
   }
   path {
     transition: all 0.3s;
@@ -48,7 +49,7 @@
   }
   &__icon {
     transition: all 0.3s;
-    position: absolute;
+    // position: absolute;
     z-index: 9;
     overflow: visible;
     opacity: 0.4;
@@ -71,33 +72,23 @@
       }
     }
   }
-  .сustom-map__icon-1 {
-    top: 160px;
-    left: 92px;
-  }
-  .сustom-map__icon-2 {
-    bottom: 95px;
-    left: 240px;
-  }
-  .сustom-map__icon-3 {
-    top: 220px;
-    left: 360px;
-  }
-  .сustom-map__icon-4 {
-    top: 150px;
-    right: 180px;
-  }
-  &__hints {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 2;
-  }
+  // .сustom-map__icon-1 {
+  //   top: 160px;
+  //   left: 92px;
+  // }
+  // .сustom-map__icon-2 {
+  //   bottom: 95px;
+  //   left: 240px;
+  // }
+  // .сustom-map__icon-3 {
+  //   top: 220px;
+  //   left: 360px;
+  // }
+  // .сustom-map__icon-4 {
+  //   top: 150px;
+  //   right: 180px;
+  // }
   &__hints-item {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
     padding: 35px 35px;
     border-radius: 30px;
     border: 2px solid #fff;
@@ -106,22 +97,22 @@
     width: 100%;
     display: none;
   }
-  .custom-map__hints-item-1 {
-    top: -75px;
-    left: 110px;
-  }
-  .custom-map__hints-item-2 {
-    top: 60px;
-    left: 260px;
-  }
-  .custom-map__hints-item-3 {
-    top: 10px;
-    left: 385px;
-  }
-  .custom-map__hints-item-4 {
-    top: -65px;
-    left: 100px;
-  }
+  // .custom-map__hints-item-1 {
+  //   top: -75px;
+  //   left: 110px;
+  // }
+  // .custom-map__hints-item-2 {
+  //   top: 60px;
+  //   left: 260px;
+  // }
+  // .custom-map__hints-item-3 {
+  //   top: 10px;
+  //   left: 385px;
+  // }
+  // .custom-map__hints-item-4 {
+  //   top: -65px;
+  //   left: 100px;
+  // }
   &__hints-item.active {
     display: block;
   }
@@ -132,6 +123,7 @@
     max-width: max-content;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 12px;
   }
   &__hints-title {
     margin: 0;

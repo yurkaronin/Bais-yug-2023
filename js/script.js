@@ -263,6 +263,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Простой аккордеон
+  const titles = document.querySelectorAll('.accordion__title');
+  // Функция для закрытия всех аккордеонов
+  function closeAllAccordions() {
+    titles.forEach(otherTitle => {
+      otherTitle.classList.remove('active');
+      otherTitle.nextElementSibling.style.maxHeight = null;
+    });
+  }
+  // Инициализация первого аккордеона как активного
+  if (titles.length > 0) {
+    titles[0].classList.add('active');
+    titles[0].nextElementSibling.style.maxHeight = titles[0].nextElementSibling.scrollHeight + "px";
+  }
+  // Прослушивание кликов на всех заголовках аккордеонов
+  titles.forEach(title => {
+    title.addEventListener('click', () => {
+      const accordionBody = title.nextElementSibling;
+      const isActive = title.classList.contains('active');
+      closeAllAccordions(); // Сначала закрываем все аккордеоны
+      // Затем переключаем состояние нажатого аккордеона
+      if (!isActive) {
+        title.classList.add('active');
+        accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+      }
+    });
+  });
+
   //   // Аккондиончики в подвале с менюшками
   //   // Получаем все элементы с классом .footer-accordion
   //   const accordions = document.querySelectorAll('.footer-accordion');

@@ -1,0 +1,14 @@
+.home-page {
+  .main {
+    padding-top: 0;
+  }
+  .header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  .header__text {
+    color: var(--White);
+  }
+  .header .link::after {
+      background-color: var(--White);
+  }
+}

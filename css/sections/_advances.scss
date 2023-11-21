@@ -44,4 +44,10 @@
   .creative-title {
     margin-bottom: 35px;
   }
+
+  @media (min-width: 1921px) {
+    &__content {
+      padding-inline: 200px;
+    }
+  }
 }
