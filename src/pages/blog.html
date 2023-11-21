@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог></title>
+
+  @@include('src/blocks/head.html')
+
+</head>
+
+<body>
+  @@include('src/blocks/header.html')
+  <main class="inner-page">
+    <section class="hero">
+      <div class="wrapper">
+        <h1 class="title">Блог</h1>
+        <ul>
+          <li><a href="#">Все статьи</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Вредители</a></li>
+          <li><a href="#">Зерновые культуры</a></li>
+          <li><a href="#">Кладоспориоз</a></li>
+          <li><a href="#">Биогидрогель</a></li>
+          <li><a href="#">Горох</a></li>
+          <li><a href="#">Обработки</a></li>
+          <li><a href="#">Фитоверм</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section content">
+      <div class="wrapper">
+        <div class="card-grid">
+          @@include('src/blocks/card-item.html')
+          @@include('src/blocks/card-item-2.html')
+          @@include('src/blocks/card-item.html')
+          @@include('src/blocks/card-item-2.html')
+          @@include('src/blocks/card-item.html')
+          @@include('src/blocks/card-item-2.html')
+          @@include('src/blocks/card-item.html')
+          @@include('src/blocks/card-item-2.html')
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+@@include('src/blocks/footer.html')
+
+</html>

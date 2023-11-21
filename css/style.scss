@@ -33,7 +33,28 @@
 
 @import "sections/footer";
 
+.full-image {
+  max-width: 100%;
+  width: 100%;
 
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.card-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero {
+  padding-top: 250px;
+}
+.inner-page {
+  padding-bottom: 90px;
+}
 // @import "pages/search-page";
 
 // @import "activity/scroll";

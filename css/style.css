@@ -1160,3 +1160,27 @@ li:first-of-type .advances__text {
 .footer .social-list {
   margin-left: auto;
 }
+
+.full-image {
+  max-width: 100%;
+  width: 100%;
+}
+.full-image img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.card-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero {
+  padding-top: 250px;
+}
+
+.inner-page {
+  padding-bottom: 90px;
+}
