@@ -30,7 +30,7 @@
         bottom: 0;
         background-image: url(../img/home-screen/bg-vector.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
   }
   &__content {
@@ -67,6 +67,15 @@
       height: 10px;
       flex-shrink: 0;
       margin-left: 60px;
+    }
+  }
+
+  @media (min-width: 1921px) {
+    .home-screen__slide::before {
+      right: 7%;
+      bottom: 0;
+      height: 110%;
+      background-size: contain;
     }
   }
 }

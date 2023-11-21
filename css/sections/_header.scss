@@ -59,37 +59,6 @@
   &__navigation {
     margin-right: auto;
     flex-grow: 2;
-    ul {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    a {
-      display: flex;
-      color: var(--Black);
-      font-family: inherit;
-      font-size: 18px;
-      font-style: normal;
-      line-height: normal;
-      padding: 10px 14px;
-      text-decoration: none;
-      max-width: max-content;
-      transition: color 0.3s;
-      &:hover,
-      &:focus,
-      &:active {
-        color: var(--DarkGreen);
-      }
-    }
-
-    li:not(:last-of-type) {
-      a {
-        margin-right: 20px;
-      }
-    }
   }
   &__cart {
     .button {

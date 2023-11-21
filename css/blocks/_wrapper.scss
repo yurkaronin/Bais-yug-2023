@@ -8,4 +8,9 @@
     max-width: 100%;
     padding: 0 10px;
   }
+
+  @media (min-width: 1921px) {
+    max-width: 80%;
+    padding-inline: 5%;
+  }
 }
