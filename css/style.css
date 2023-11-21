@@ -754,7 +754,7 @@ input[type=radio].visually-hidden {
 }
 
 .main {
-  padding-top: 212px;
+  padding-top: 160px;
   padding-bottom: 115px;
 }
 
@@ -858,7 +858,7 @@ input[type=radio].visually-hidden {
 }
 
 .breadcrumbs {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   overflow-x: auto;
   max-width: 100%;
 }
@@ -1336,6 +1336,7 @@ li:first-of-type .advances__text {
 
 .home-page .main {
   padding-top: 0;
+  padding-bottom: 13px;
 }
 .home-page .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
