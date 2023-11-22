@@ -1629,6 +1629,46 @@ li:first-of-type .advances__text {
   margin-bottom: 100px;
 }
 
+.article__body {
+  padding: 75px 50px 105px;
+  border-radius: 10px;
+  background: var(--White);
+}
+.article__meta {
+  margin: 0;
+  display: block;
+}
+.article__meta-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.article__meta-item:not(:last-of-type) {
+  margin-right: 50px;
+}
+.article__content p {
+  font-weight: 300;
+}
+.article__content h1,
+.article__content h2,
+.article__content h3,
+.article__content h4,
+.article__content h5,
+.article__content h6 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+}
+.article__content img {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .footer {
   margin-bottom: 13px;
 }
