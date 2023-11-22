@@ -38,11 +38,14 @@
 @import "sections/advances";
 @import "sections/reviews";
 @import "sections/map";
+@import "sections/modal";
 
 @import "sections/footer";
 
 
 @import "pages/home-page";
+
+@import "activity/modal-show";
 
 /* Стилизация для всей полосы прокрутки */
 ::-webkit-scrollbar {

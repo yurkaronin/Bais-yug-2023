@@ -291,6 +291,117 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Работа с формами
+  const handleClickOrTouch = (element, callback) => {
+    const touchendListener = (e) => {
+      e.preventDefault();
+      element.removeEventListener('touchend', touchendListener);
+      callback(e);
+    };
+
+    element.addEventListener('click', callback);
+    element.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      element.addEventListener('touchend', touchendListener);
+    });
+  };
+
+  const setupBodyClickListener = () => {
+    document.removeEventListener('click', bodyClickListener);
+
+    function bodyClickListener(event) {
+      let activeModal = document.querySelector('.modal.active');
+      if (activeModal && (!event.target.closest('.modal__body') || event.target.closest('.js-close-modal'))) {
+        activeModal.classList.remove('active');
+        document.removeEventListener('click', bodyClickListener);
+      }
+    }
+
+    document.addEventListener('click', bodyClickListener);
+  };
+
+  let showDialogButtons = document.querySelectorAll('[data-target]');
+  showDialogButtons.forEach(button => {
+    handleClickOrTouch(button, function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      let targetClass = event.currentTarget.getAttribute('data-target');
+      let modal = document.getElementById(targetClass);
+
+      if (modal) {
+        modal.classList.add('active');
+        setupBodyClickListener();
+      }
+    });
+  });
+
+  // Закрытие активного модального окна
+  const closeActiveModal = () => {
+    let activeModal = document.querySelector('.modal.active');
+    if (activeModal) {
+      activeModal.classList.remove('active');
+    }
+  };
+
+  // Показать модальное окно с сообщением об успешной отправке
+  const showSuccessModal = () => {
+    let successModal = document.getElementById('successModal');
+    if (successModal) {
+      successModal.classList.add('active');
+      setupBodyClickListener();
+    }
+  };
+
+  // Настройки маски для телефона
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+
+  // Находим все элементы ввода с типом 'tel'
+  const phoneInputs = document.querySelectorAll('input[type="tel"]');
+  phoneInputs.forEach(input => {
+    const maskInstance = IMask(input, maskOptions);
+    input.setAttribute('pattern', '\\+7\\(\\d{3}\\)\\d{3}-\\d{2}-\\d{2}');
+    input.setAttribute('title', 'Номер телефона должен содержать 11 цифр');
+
+    function checkValue() {
+      // Проверяем, есть ли что-то кроме маски
+      if (maskInstance.unmaskedValue) {
+        input.classList.add('has-value');
+      } else {
+        input.classList.remove('has-value');
+      }
+    }
+
+    // Проверяем значение при потере фокуса и вводе данных
+    input.addEventListener('blur', checkValue);
+    input.addEventListener('input', checkValue);
+  });
+
+
+
+  // Находим все формы на странице
+  // const forms = document.querySelectorAll('form');
+  // forms.forEach(form => {
+  //   form.addEventListener('submit', function (event) {
+  //     event.preventDefault();
+
+  //     // Проверка валидации формы перед отправкой
+  //     if (!form.checkValidity()) {
+  //       event.stopPropagation();
+  //       form.classList.add('was-validated');
+  //       return;
+  //     }
+
+  //     // Закрытие текущего модального окна
+  //     closeActiveModal();
+
+  //     // Показать модальное окно с сообщением об успешной отправке
+  //     showSuccessModal();
+  //   });
+  // });
+
   //   // Аккондиончики в подвале с менюшками
   //   // Получаем все элементы с классом .footer-accordion
   //   const accordions = document.querySelectorAll('.footer-accordion');
