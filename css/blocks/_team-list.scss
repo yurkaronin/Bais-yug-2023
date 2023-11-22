@@ -1,0 +1,38 @@
+.team-list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  &:after {
+    content: "";
+    z-index: 0;
+    display: block;
+    border-radius: 722px;
+    background: #c8f1a8;
+    filter: blur(150px);
+    width: 722px;
+    height: 722px;
+    position: absolute;
+    top: 40%;
+    right: 35%;
+  }
+  &::before {
+    content: "";
+    z-index: 0;
+    display: block;
+    border-radius: 273px;
+    background: #a8f1ca;
+    filter: blur(150px);
+    width: 272px;
+    height: 273px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+  &__grid {
+    display: grid;
+    gap: 100px 48px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    z-index: 2;
+  }
+}
