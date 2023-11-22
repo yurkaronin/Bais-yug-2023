@@ -3,6 +3,8 @@
   padding-bottom: 70px;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  z-index: 2;
 
   &__content {
     p {
