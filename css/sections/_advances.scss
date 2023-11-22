@@ -3,6 +3,12 @@
     border-radius: 10px;
     background-color: var(--White);
   }
+  &__content--mod {
+    background-color: transparent;
+  }
+  &__content--mod &__grid {
+    padding-top: 0;
+  }
 
   &__grid {
     display: grid;

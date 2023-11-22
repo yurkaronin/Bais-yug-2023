@@ -1,0 +1,16 @@
+.docs {
+  &__slider {
+    position: relative;
+  }
+  &__link {
+    display: block;
+    margin-bottom: 17px;
+  }
+  &__image {
+    display: block;
+  }
+  &__text {
+    margin: 0;
+    font-size: 16px;
+  }
+}

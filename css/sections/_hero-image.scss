@@ -1,0 +1,60 @@
+.hero-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 835px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__container {
+    position: absolute;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 34px;
+    left: 140px;
+    width: 330px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  &__item:hover &__container {
+    opacity: 1;
+    visibility: initial;
+  }
+  &__name {
+    margin: 0;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__text {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+  }
+  &__icon {
+    display: block;
+    width: 280px;
+    height: 285px;
+
+    img {
+      display: block;
+      margin-right: auto;
+      margin-top: 0;
+    }
+  }
+}

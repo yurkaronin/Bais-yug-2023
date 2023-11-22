@@ -8,3 +8,26 @@
     background: var(--White);
   }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--White);
+}
+
+.swiper-button-next {
+  right: -10%;
+  left: auto;
+}
+.swiper-button-prev {
+  left: -10%;
+  right: auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 28px;
+  color: var(--DarkGreen);
+}
