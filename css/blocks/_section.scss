@@ -3,4 +3,25 @@
   padding-bottom: 70px;
   max-width: 100%;
   overflow-x: hidden;
+
+  &__content {
+    p {
+      font-weight: 300;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    img {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
 }

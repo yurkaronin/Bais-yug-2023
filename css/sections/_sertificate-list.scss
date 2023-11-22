@@ -1,0 +1,9 @@
+.sertificate-list {
+  margin-bottom: 50px;
+  &__grid {
+    display: grid;
+    gap: 100px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-end;
+  }
+}
