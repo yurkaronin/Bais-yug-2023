@@ -1105,6 +1105,9 @@ input.has-value + .custom-form__label {
 .pagination__item {
   margin-right: 40px;
 }
+.pagination__item:has(.pagination__link--next) {
+  margin-right: 0;
+}
 .pagination__link {
   padding: 15px;
   text-align: center;
@@ -1145,6 +1148,33 @@ input.has-value + .custom-form__label {
 }
 .pagination__link--next__link:hover {
   background-color: #eff3f0;
+}
+
+/* Стилизация для всей полосы прокрутки */
+::-webkit-scrollbar {
+  width: 3px; /* ширина полосы прокрутки */
+  border-radius: 4.5px;
+}
+
+/* Стилизация дорожки прокрутки */
+/* Стилизация бегунка прокрутки */
+::-webkit-scrollbar-thumb {
+  background: var(--DarkGreen); /* зеленый цвет бегунка */
+}
+
+/* Стилизация бегунка прокрутки при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--VibrantGreen); /* более темный оттенок зеленого при наведении */
+}
+
+.full-image {
+  max-width: 100%;
+  width: 100%;
+}
+.full-image img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
 }
 
 .header {
@@ -1592,6 +1622,13 @@ li:first-of-type .advances__text {
   font-size: 16px;
 }
 
+.article-list__grid {
+  display: grid;
+  gap: 140px 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+
 .footer {
   margin-bottom: 13px;
 }
@@ -1760,38 +1797,4 @@ li:first-of-type .advances__text {
 .modal.active {
   visibility: visible; /* Показать активную модалку */
   opacity: 1;
-}
-
-/* Стилизация для всей полосы прокрутки */
-::-webkit-scrollbar {
-  width: 3px; /* ширина полосы прокрутки */
-  border-radius: 4.5px;
-}
-
-/* Стилизация дорожки прокрутки */
-/* Стилизация бегунка прокрутки */
-::-webkit-scrollbar-thumb {
-  background: var(--DarkGreen); /* зеленый цвет бегунка */
-}
-
-/* Стилизация бегунка прокрутки при наведении */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--VibrantGreen); /* более темный оттенок зеленого при наведении */
-}
-
-.full-image {
-  max-width: 100%;
-  width: 100%;
-}
-.full-image img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-}
-
-.card-grid {
-  display: grid;
-  gap: 140px 30px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 100px;
 }

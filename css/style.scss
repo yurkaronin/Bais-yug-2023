@@ -30,6 +30,8 @@
 @import "blocks/decorative-list";
 @import "blocks/tag-list";
 @import "blocks/pagination";
+@import "blocks/scrollbar";
+@import "blocks/full-image";
 
 @import "sections/header";
 @import "sections/home-screen";
@@ -43,51 +45,13 @@
 @import "sections/modal";
 @import "sections/hero-image";
 @import "sections/docs";
+@import "sections/article-list";
 
 @import "sections/footer";
 
 @import "pages/home-page";
 
 @import "activity/modal-show";
-
-/* Стилизация для всей полосы прокрутки */
-::-webkit-scrollbar {
-  width: 3px; /* ширина полосы прокрутки */
-  border-radius: 4.5px;
-}
-
-/* Стилизация дорожки прокрутки */
-// ::-webkit-scrollbar-track {
-//   background: #f1f1f1; /* цвет фона дорожки */
-// }
-
-/* Стилизация бегунка прокрутки */
-::-webkit-scrollbar-thumb {
-  background: var(--DarkGreen); /* зеленый цвет бегунка */
-}
-
-/* Стилизация бегунка прокрутки при наведении */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--VibrantGreen); /* более темный оттенок зеленого при наведении */
-}
-
-.full-image {
-  max-width: 100%;
-  width: 100%;
-
-  img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-.card-grid {
-  display: grid;
-  gap: 140px 30px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 100px;
-}
 
 // @import "pages/search-page";
 
