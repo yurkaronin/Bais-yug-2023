@@ -672,6 +672,7 @@ input.has-value + .custom-form__label {
   top: 0;
   left: 0;
   z-index: 0;
+  pointer-events: none;
 }
 .custom-map::before {
   content: "";
@@ -685,6 +686,7 @@ input.has-value + .custom-form__label {
   bottom: 0;
   right: 0;
   z-index: 0;
+  pointer-events: none;
 }
 .custom-map__image {
   z-index: 0;
