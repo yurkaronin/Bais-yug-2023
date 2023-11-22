@@ -1,0 +1,28 @@
+.tag-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+  }
+  &__link {
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    border-radius: 6px;
+    background-color: var(--White);
+    padding: 20px 18px;
+  }
+  &__link.active {
+    background-color: var(--DarkGreen);
+    color: var(--White);
+  }
+}
