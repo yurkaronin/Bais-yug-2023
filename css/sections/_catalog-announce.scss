@@ -1,23 +1,4 @@
 .catalog-announce {
-  position: relative;
-  overflow: hidden;
-  &::before {
-    content: '';
-    display: block;
-    border-radius: 1039px;
-    background: #c8f1a8;
-    filter: blur(150px);
-    width: 1040px;
-    height: 1040px;
-    position: absolute;
-    right: -150px;
-    top: 190px;
-  }
-  .wrapper {
-    position: relative;
-    z-index: 2;
-  }
-
   &__list {
     list-style: none;
     margin: 0;
