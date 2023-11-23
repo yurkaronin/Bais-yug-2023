@@ -6,6 +6,11 @@
     line-height: 1.1;
     margin-top: 140px;
     margin-bottom: 50px;
-
+  }
+  &__grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 350px 1fr;
+    margin-bottom: 100px;
   }
 }

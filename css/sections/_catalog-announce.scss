@@ -8,3 +8,11 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.catalog-announce--mod {
+  .catalog-announce__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 25px;
+  }
+
+}

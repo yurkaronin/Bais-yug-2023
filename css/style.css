@@ -492,6 +492,18 @@ input.has-value + .custom-form__label {
 .mini-card:hover {
   box-shadow: 0px 20px 26px 0px rgba(0, 0, 0, 0.1);
 }
+.mini-card--mod .mini-card__title {
+  font-size: 24px;
+}
+.mini-card--mod .mini-card__subtitle {
+  font-size: 14px;
+}
+.mini-card--mod .mini-card__text {
+  font-size: 14px;
+}
+.mini-card--mod .mini-card__details li {
+  font-size: 24px;
+}
 
 .creative-title {
   display: flex;
@@ -1460,6 +1472,152 @@ input.has-value + .custom-form__label {
   scale: 1.1;
 }
 
+.filter__group {
+  border-radius: 10px;
+  background-color: var(--White);
+  padding: 30px 30px;
+  border: none;
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.filter__name {
+  display: block;
+  margin: 0;
+  font-family: var(--Font-1);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 42px;
+  position: relative;
+}
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.filter__group--checkbox .filter__label {
+  font-family: var(--Font-1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 58px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.filter__group--checkbox .filter__label::before {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.filter__group--checkbox input[type=checkbox] + label::before {
+  background-image: url(../img/icons/checkbox-off-1.svg);
+}
+.filter__group--checkbox input[type=radio] + label::before {
+  background-image: url(../img/icons/radio-off-1.svg);
+}
+.filter__group--checkbox input[type=checkbox]:checked + label::before,
+.filter__group--checkbox input[type=radio]:checked + label::before {
+  background-image: url(../img/icons/checkbox-on-1.svg);
+}
+.filter__group--checkbox input[type=checkbox]:checked + label::before {
+  background-image: url(../img/icons/checkbox-on-1.svg);
+}
+.filter__group--checkbox input[type=radio]:checked + label::before {
+  width: 30px;
+  background-image: url(../img/icons/radio-on-1.svg);
+}
+.filter__group--checkbox input[type=radio]:disabled + label::before,
+.filter__group--checkbox input[type=checkbox]:disabled + label::before {
+  opacity: 0.25;
+}
+.filter__group--checkbox input[type=radio]:disabled + label,
+.filter__group--checkbox input[type=checkbox]:disabled + label {
+  color: #a6a6a6;
+}
+.filter__group--tags .filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter__group--tags .filter__label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: max-content;
+  color: var(--DarkGreen);
+  font-family: var(--Font-1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #E5EBE0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.filter__group--tags input[type=checkbox]:checked + label {
+  background-color: var(--DarkGreen);
+  color: var(--White);
+}
+
+.simple-articles__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.simple-articles__item {
+  position: relative;
+  margin-bottom: 50px;
+}
+.simple-articles__image {
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+.simple-articles__name {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.simple-articles__meta {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.simple-articles__meta li {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.simple-articles__lead {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .header {
   max-width: 100%;
   width: 100%;
@@ -1688,6 +1846,11 @@ input.has-value + .custom-form__label {
   display: grid;
   gap: 70px 25px;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog-announce--mod .catalog-announce__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 25px;
 }
 
 .advances__content {
@@ -2110,6 +2273,12 @@ li:first-of-type .advances__text {
   line-height: 1.1;
   margin-top: 140px;
   margin-bottom: 50px;
+}
+.catalog__grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 350px 1fr;
+  margin-bottom: 100px;
 }
 
 .modal {

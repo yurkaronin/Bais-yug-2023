@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Против вредителей</title>
+
+  @@include('src/blocks/head.html')
+
+</head>
+
+<body class="certificate catalog">
+  @@include('src/blocks/header.html')
+  <main class="main">
+
+    <section class="section">
+      <div class="wrapper">
+        <div class="container">
+
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Каталог</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link">Против вредителей</a>
+              </li>
+            </ul>
+          </div>
+
+          <h1 class="title">Против вредителей</h1>
+
+          <div class="catalog__grid">
+            <div class="catalog__grid-aside">
+
+              <div class="filter">
+                <form action="">
+
+                  <div class="filter__group filter__group--checkbox">
+                    <span class="filter__name">Каталог</span>
+                    <ul class="filter__list">
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-all" id="param-all"
+                          value="Все средства" checked>
+                        <label class="filter__label" for="param-all">Все средства</label>
+                      </li>
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-1" id="param-1" value="Инсектициды">
+                        <label class="filter__label" for="param-1">Инсектициды</label>
+                      </li>
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-2" id="param-2" value="Акарициды">
+                        <label class="filter__label" for="param-2">Акарициды</label>
+                      </li>
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-3" id="param-3" value="Фунгициды">
+                        <label class="filter__label" for="param-3">Фунгициды</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-4" id="param-4" value="Бактерициды">
+                        <label class="filter__label" for="param-4">Бактерициды</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-5" id="param-5" value="Нематициды">
+                        <label class="filter__label" for="param-5">Нематициды</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-6" id="param-6" value="Вирулициды ">
+                        <label class="filter__label" for="param-6">Вирулициды </label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-7" id="param-7" value="Регуляторы роста ">
+                        <label class="filter__label" for="param-7">Регуляторы роста </label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-8" id="param-8" value="Кормовые добавки">
+                        <label class="filter__label" for="param-8">Кормовые добавки</label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="filter__group filter__group--tags">
+                    <span class="filter__name">Обрабатываемые объекты</span>
+                    <ul class="filter__list">
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-1" id="param-tag-1"
+                          value="Пшеница озимая" checked>
+                        <label class="filter__label" for="param-tag-1">Пшеница озимая</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-2" id="param-tag-2"
+                          value="Пшеница яровая" >
+                        <label class="filter__label" for="param-tag-2">Пшеница яровая</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-3" id="param-tag-3"
+                          value="Овёс" >
+                        <label class="filter__label" for="param-tag-3">Овёс</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-4" id="param-tag-4"
+                          value="Яблоня" >
+                        <label class="filter__label" for="param-tag-4">Яблоня</label>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="filter__group filter__group--tags">
+                    <span class="filter__name">Вредители</span>
+                    <ul class="filter__list">
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-1-1" id="param-tag-1-1"
+                          value="Клещ" checked>
+                        <label class="filter__label" for="param-tag-1-1">Клещ</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-1-2" id="param-tag-1-2"
+                          value="Тля" >
+                        <label class="filter__label" for="param-tag-1-2">Тля</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-1-3" id="param-tag-1-3"
+                          value="Белокрылка" >
+                        <label class="filter__label" for="param-tag-1-3">Белокрылка</label>
+                      </li>
+
+                      <li class="filter__item">
+                        <input class="visually-hidden" type="checkbox" name="param-tag-1-4" id="param-tag-1-4"
+                          value="Гусеница чешуекрылая" >
+                        <label class="filter__label" for="param-tag-1-4">Гусеница чешуекрылая</label>
+                      </li>
+
+                    </ul>
+                  </div>
+                </form>
+              </div>
+
+              <div class="simple-articles">
+                <ul class="simple-articles__list">
+
+                  <li class="simple-articles__item">
+                    <img src="./img/simple-articles/1.jpg" alt="фото" loading="lazy" width="345">
+                    <a href="#">
+                      <h3 class="simple-articles__name">Название статьи</h3>
+                    </a>
+
+                    <ul class="simple-articles__meta">
+                      <li>
+                        <time datetime="2023-09-06">6.09.2023</time>
+                      </li>
+                      <li>
+                        <a href="#">Автор статьи</a>
+                      </li>
+                    </ul>
+                    <p class="simple-articles__lead">Мы работаем индивидуально для каждого клиента: разработаем состав травосмеси, отправим любой транспортной компанией, предоставим всю информацию по продукту.</p>
+                  </li>
+                  <li class="simple-articles__item">
+                    <img class="simple-articles__image" src="./img/simple-articles/2.jpg" alt="фото" loading="lazy" width="345">
+                    <a href="#">
+                      <h3 class="simple-articles__name">Название статьи</h3>
+                    </a>
+
+                    <ul class="simple-articles__meta">
+                      <li>
+                        <time datetime="2023-09-06">6.09.2023</time>
+                      </li>
+                      <li>
+                        <a href="#">Автор статьи</a>
+                      </li>
+                    </ul>
+                    <p class="simple-articles__lead">Мы работаем индивидуально для каждого клиента: разработаем состав травосмеси, отправим любой транспортной компанией, предоставим всю информацию по продукту.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog__grid-content">
+
+              <div class="catalog-announce catalog-announce--mod">
+                <ul class="catalog-announce__list">
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+                  @@include('src/blocks/mini-card--mod.html')
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          @@include('src/blocks/pagination.html')
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+@@include('src/blocks/footer.html')
+
+</html>
