@@ -103,7 +103,8 @@
       transition: all 0.3s;
       cursor: pointer;
     }
-    input[type="checkbox"]:checked + label {
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
       background-color: var(--DarkGreen);
       color: var(--White);
     }

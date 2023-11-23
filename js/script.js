@@ -67,6 +67,36 @@ document.addEventListener("DOMContentLoaded", () => {
   //       });
   //     });
   //   };
+  // простые табы в карточке товара
+  const tabs = document.querySelectorAll(".tabs__link");
+  const contents = document.querySelectorAll(".tabs__details");
+
+  // Проверяем, есть ли вкладки на странице
+  if (tabs.length > 0 && contents.length > 0) {
+    // Функция для активации вкладки и ее содержимого
+    function activateTab(tab) {
+      const activeTab = tab.getAttribute('data-tab');
+
+      // Удаляем активный класс со всех вкладок и содержимого
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+
+      // Добавляем активный класс выбранной вкладке и соответствующему содержимому
+      tab.classList.add('active');
+      document.querySelector(`.tabs__details[data-content="${activeTab}"]`).classList.add('active');
+    }
+
+    // Назначаем обработчики кликов
+    tabs.forEach(tab => {
+      tab.addEventListener("click", function (event) {
+        event.preventDefault();
+        activateTab(this);
+      });
+    });
+
+    // Активируем первую вкладку и ее содержимое по умолчанию
+    activateTab(tabs[0]);
+  }
 
   //   // слайдер с логотипами
   if (document.querySelector('.home-screen__slider .mySwiper')) {
@@ -86,6 +116,19 @@ document.addEventListener("DOMContentLoaded", () => {
       spaceBetween: 25
     });
   };
+
+    //   // слайдер со статьями в карточке товара
+    if (document.querySelector('.product__articles-slider .mySwiper')) {
+      console.log('Слайдер со статьями в карточке товара есть!');
+      var productArticlesSlider = new Swiper(".product__articles-slider .mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        navigation: {
+          nextEl: ".product__articles-slider .swiper-button-next",
+          prevEl: ".product__articles-slider .swiper-button-prev",
+        },
+      });
+    };
 
   //   // слайдер со статьями
   if (document.querySelector('#card-slider-2 .mySwiper')) {
@@ -112,9 +155,9 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 4,
       spaceBetween: 80,
       navigation: {
-                nextEl: ".docs .swiper-button-next",
-                prevEl: ".docs .swiper-button-prev",
-              },
+        nextEl: ".docs .swiper-button-next",
+        prevEl: ".docs .swiper-button-prev",
+      },
     });
   };
 

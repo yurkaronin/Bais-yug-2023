@@ -31,3 +31,10 @@
   font-size: 28px;
   color: var(--DarkGreen);
 }
+
+.swiper-buttons__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
+}
