@@ -1214,11 +1214,11 @@ input.has-value + .custom-form__label {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.sertificate-list {
+.certificate-list {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.sertificate-list__grid {
+.certificate-list__grid {
   display: grid;
   gap: 100px 80px;
   grid-template-columns: repeat(4, 1fr);
@@ -1347,6 +1347,25 @@ input.has-value + .custom-form__label {
   position: absolute;
   top: 35%;
   left: 20%;
+}
+
+.images-cascade {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 200px; /* Отрицательный маржин для компенсации */
+}
+.images-cascade__item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.images-cascade__item:nth-of-type(2n) {
+  margin-bottom: -50%;
 }
 
 .header {
@@ -1539,6 +1558,17 @@ input.has-value + .custom-form__label {
 }
 .content p + p {
   margin-top: 0.5rem;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 .content--mod {
