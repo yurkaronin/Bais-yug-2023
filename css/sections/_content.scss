@@ -34,6 +34,20 @@
   @media (max-width: 1750px) {
     padding-bottom: 60px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding-top: 20px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 32px;
+    }
+  }
 }
 
 .content--mod {
@@ -57,5 +71,9 @@
     h6 {
       font-size: 32px;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 20px;
   }
 }

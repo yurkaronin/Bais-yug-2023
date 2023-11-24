@@ -62,4 +62,11 @@
   &--mod &__details li {
     font-size: 24px;
   }
+
+  @media (max-width: 1024px) {
+    .mini-card__title {
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+  }
 }

@@ -34,7 +34,6 @@
   }
   &__container {
     position: relative;
-
   }
   &__title {
     display: block;
@@ -65,5 +64,33 @@
   }
   &__item:hover &__image {
     scale: 1.1;
+  }
+
+  @media (max-width: 1280px) {
+    .promo-announcement__item {
+      padding: 35px 20px;
+      min-height: 350px;
+    }
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__link {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    &__title {
+      font-size: 28px;
+    }
+    &__link {
+      font-size: 18px;
+    }
+    .promo-announcement__link::after {
+      margin-left: 16px;
+    }
   }
 }

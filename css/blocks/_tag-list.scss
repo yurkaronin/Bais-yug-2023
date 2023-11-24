@@ -26,4 +26,16 @@
     background-color: var(--DarkGreen);
     color: var(--White);
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+    &__item {
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+    .tag-list__link {
+      font-size: 14px;
+      padding: 12px 15px;
+  }
+  }
 }

@@ -125,7 +125,7 @@
     .swiper-button-next:after,
     .swiper-button-prev:after {
       font-size: 23px;
-  }
+    }
   }
   &__title {
     margin: 0;
@@ -175,7 +175,6 @@
     font-size: 32px;
     padding: 34px 20px;
   }
-
 }
 
 .product-services {
@@ -183,4 +182,46 @@
   border: 3px solid #bed8c5;
   background: var(--White);
   padding: 30px;
+}
+
+@media (max-width: 1750px) {
+  .product__hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .product__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product .filter__group--tags .filter__list {
+    gap: 16px;
+  }
+  .product__hero {
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+  .product-volume__button {
+    font-size: 24px;
+    padding: 17px 15px;
+  }
+  .product__options {
+    grid-row: 3;
+  }
+  .product__specifications-grid {
+    display: block;
+  }
+  .product__specifications-details {
+    grid-column: initial;
+  }
+  .product__articles-slider {
+    margin-top: 32px;
+  }
+  .product__title {
+    font-size: 32px;
+  }
+  .product__similar {
+    margin-bottom: 50px;
+  }
 }

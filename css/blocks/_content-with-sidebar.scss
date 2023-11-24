@@ -20,4 +20,37 @@
     max-height: 755px;
     overflow-y: auto;
   }
+
+  @media (max-width: 1750px) {
+    display: block;
+
+    .content-with-sidebar__left {
+      padding: 60px 35px;
+      margin-bottom: 32px;
+    }
+    .content-with-sidebar__scroll {
+      max-height: initial;
+      overflow-y: initial;
+      display: grid;
+      gap: 32px 16px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .accordion__title {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .content-with-sidebar__scroll {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 768px) {
+    .content-with-sidebar__right {
+      padding: 35px 20px;
+    }
+    .content-with-sidebar__scroll {
+      grid-template-columns: 1fr;
+    }
+  }
 }

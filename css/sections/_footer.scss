@@ -214,4 +214,10 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (max-width: 768px) {
+    .footer__tel {
+      font-size: 32px;
+    }
+  }
 }

@@ -52,4 +52,27 @@
     fill: var(--White);
   }
 
+  @media (max-width: 1024px) {
+    &__name {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    &__link {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 35px 21px 30px
+    &__name {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    &__link {
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+  }
+
 }
