@@ -92,6 +92,21 @@
   }
 
   @media (max-width: 1750px) {
+    &__flex-top {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 50px 1fr;
+    }
+    .header__logo {
+      position: initial;
+    }
+    .header__group {
+      grid-template-columns: 1fr 270px 135px;
+      gap: 16px;
+  }
+  }
+
+  @media (max-width: 1280px) {
     display: none;
   }
 }
@@ -99,7 +114,7 @@
 .header-mobile {
   display: none;
 
-  @media (max-width: 1750px) {
+  @media (max-width: 1280px) {
     display: block;
     position: relative;
     margin: 4px;

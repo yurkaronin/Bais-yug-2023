@@ -146,6 +146,17 @@
   }
 
   @media (max-width: 1750px) {
+    .footer__top,
+    .footer__bottom {
+      padding-inline: 20px;
+    }
+    .footer__tel {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 1280px) {
     &__tel {
       font-size: 36px;
       margin: 0 auto;
@@ -201,6 +212,6 @@
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 20px;
-  }
+    }
   }
 }

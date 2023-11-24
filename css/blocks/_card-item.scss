@@ -74,4 +74,28 @@
     line-height: 1;
     padding: 5px 10px;
   }
+
+  @media (max-width: 1750px) {
+    &__details {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-item__label-group {
+      position: initial;
+      order: -1;
+    }
+    .card-item__photo {
+      margin-bottom: 17px;
+    }
+    .card-item__title {
+      font-size: 28px;
+    }
+    .card-item__meta {
+      font-size: 14px;
+    }
+    .card-item__text {
+      font-size: 18px;
+    }
+  }
 }
