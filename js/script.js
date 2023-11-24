@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
       breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1.2
+          slidesPerView: 1
         },
         // // when window width is >= 480px
         // 767: {
@@ -203,18 +203,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // 1023: {
         //   slidesPerView: 3
         // },
-        // 1279: {
-        //   slidesPerView: 4
-        // },
+        768: {
+          slidesPerView: 1.2
+        },
         // when window width is >= 640px
         1750: {
-          slidesPerView: 1.2
+          slidesPerView: 2.3
         }
       }
     });
   };
 
-  //   // слайдер c отзывами
+  //   // слайдер c документами
   if (document.querySelector('.docs .mySwiper')) {
     console.log('Слайдер с документами есть!');
     var homeScreenSwiper = new Swiper(".docs .mySwiper", {
@@ -227,23 +227,26 @@ document.addEventListener("DOMContentLoaded", () => {
       breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1
+          slidesPerView: 1.5,
+          spaceBetween: 40
         },
         // // when window width is >= 480px
-        // 767: {
-        //   slidesPerView: 2
-        // },
-        // 1023: {
-        //   slidesPerView: 3
-        // },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 80
+        },
+        1024: {
+          slidesPerView: 3,
+        },
         // 1279: {
         //   slidesPerView: 4
         // },
         // when window width is >= 640px
         1750: {
-          slidesPerView: 1
+          slidesPerView: 4
         }
       }
+
     });
   };
 

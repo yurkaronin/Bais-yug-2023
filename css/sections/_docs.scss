@@ -1,6 +1,7 @@
 .docs {
   &__slider {
     position: relative;
+    max-width: 100%;
   }
   &__link {
     display: block;
@@ -8,6 +9,8 @@
   }
   &__image {
     display: block;
+    max-width: 100%;
+    width: 100%;
   }
   &__text {
     margin: 0;

@@ -68,4 +68,11 @@
   &__item:hover &__icon img {
     width: 132px;
   }
+
+  @media (max-width: 1750px) {
+    .decorative-list__item {
+      margin-bottom: 60px;
+      justify-content: center;
+    }
+  }
 }
