@@ -2418,7 +2418,7 @@ li:first-of-type .advances__text {
   pointer-events: none;
   transition: opacity 0.5s, visibility 0.5s;
   background-color: rgba(0, 0, 0, 0.73);
-  z-index: 9999;
+  z-index: 99999;
 }
 .modal__body {
   padding: 80px 40px;
@@ -2459,6 +2459,34 @@ li:first-of-type .advances__text {
 .modal .section-label::before {
   width: 32px;
   left: -32px;
+}
+@media (max-width: 1280px) {
+  .modal .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .modal .custom-form__input {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .modal .custom-form__button {
+    margin-bottom: 30px;
+    font-size: 14px;
+    padding: 20px 22px;
+    min-width: 100%;
+  }
+  .modal .custom-form__consent {
+    font-size: 15px;
+    line-height: 1.1;
+    display: inline;
+    position: relative;
+    padding-left: 25px;
+  }
+  .modal .custom-form__check label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .hero-image {
