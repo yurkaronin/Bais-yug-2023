@@ -90,4 +90,169 @@
   .tel {
     margin-left: 32px;
   }
+
+  @media (max-width: 1750px) {
+    display: none;
+  }
+}
+
+.header-mobile {
+  display: none;
+
+  @media (max-width: 1750px) {
+    display: block;
+    position: relative;
+    margin: 4px;
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    z-index: 999;
+    .wrapper {
+      padding: 0;
+    }
+    &__top {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 25px 1fr 30px;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 3px;
+      background: var(--White);
+      padding: 4px 14px 6px;
+    }
+    &__logo {
+      max-width: 15px;
+      margin: 0 auto;
+    }
+    &__cart {
+      position: relative;
+      svg {
+        pointer-events: none;
+      }
+    }
+    &__cart-link {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+    &__cart-indicator {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--DarkGreen);
+    }
+    .social-list {
+      max-width: max-content;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__navigation {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      z-index: 99;
+      border-radius: 3px;
+      background: var(--White);
+      padding: 25px 15px 54px;
+      overflow-y: auto;
+      max-height: 120vh;
+      padding-bottom: 120px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+    .main-navigation__list {
+      flex-direction: column;
+    }
+    .main-navigation__link {
+      font-size: 28px;
+      padding: 15px 0;
+    }
+    .main-navigation__item {
+      max-width: 100%;
+      width: 100%;
+    }
+    .main-navigation__link {
+      max-width: 100%;
+      width: 100%;
+      justify-content: space-between;
+      color: var(--DarkGreen);
+    }
+
+    .main-navigation__item:has(.main-navigation__sublist) {
+      .main-navigation__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::after {
+          content: "";
+          margin-left: 12px;
+          margin-right: 18px;
+          flex-shrink: 0;
+          display: block;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 15px;
+          height: 9px;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.27385 6.58393L7.50484 0.177774C7.77978 -0.0696745 8.21969 -0.0696745 8.49463 0.177774L15.7256 6.58393C16.0555 6.88637 16.083 7.38127 15.8081 7.7112C15.5332 8.06862 15.0383 8.09612 14.7358 7.82117L7.99973 1.85492L1.26364 7.82117C0.961206 8.09612 0.466309 8.06862 0.191367 7.7112C-0.0835754 7.38127 -0.0560812 6.88637 0.27385 6.58393Z' fill='%23006634'/%3e%3c/svg%3e ");
+        }
+      }
+    }
+    .main-navigation__sublist {
+      position: initial;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .main-navigation__subitem {
+      max-width: 100%;
+      width: 100%;
+    }
+    .main-navigation__sublink {
+      font-size: 20px;
+      padding: 15px 0;
+      max-width: 100%;
+      width: 100%;
+      color: var(--DarkGreen);
+      font-weight: 400;
+    }
+    .mobile-navigation {
+      margin-bottom: 25px;
+    }
+
+    .header-mobile__copyright {
+      text-align: center;
+    }
+    .footer__copyright {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .main-navigation__sublist {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.4s;
+      margin: 0;
+    }
+
+    .main-navigation__item .active + .main-navigation__sublist {
+      padding-top: 30px;
+      opacity: 1;
+      visibility: initial;
+      pointer-events: initial;
+      max-height: 1200px;
+      overflow: initial;
+      padding-bottom: 30px;
+    }
+  }
 }

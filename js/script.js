@@ -41,32 +41,38 @@ document.addEventListener("DOMContentLoaded", () => {
   //     document.body.classList.toggle('menu-open');
   //   });
 
+  // показ мобильного меню и кнопки
+  const buttonMenu = document.querySelector('.button-menu');
+  // const navigation = document.querySelector('.navigation');
+  buttonMenu.addEventListener('click', function () {
+    buttonMenu.classList.toggle('isActive');
+    // navigation.classList.toggle('isActive');
+    document.body.classList.toggle('menu-open');
+  });
 
-  //   // Гибридный аккордеон в мобильном меню
-  //   if (document.documentElement.clientWidth <= 767) {
-  //     // Находим все ссылки с классом .js-accordion-link
-  //     let links = document.querySelectorAll('.js-accordion-link');
 
-  //     // Добавляем слушатель события 'click' для каждой ссылки
-  //     links.forEach(link => {
-  //       link.addEventListener('click', function (event) {
-  //         // Предотвращаем действие по умолчанию (если это обычная ссылка)
-  //         event.preventDefault();
+  // Гибридный аккордеон в мобильном меню
+  if (document.documentElement.clientWidth <= 1750) {
+    // Поиск всех элементов с классом 'main-navigation__item'
+    const menuItems = document.querySelectorAll('.main-navigation__item');
 
-  //         // Получаем родительский элемент
-  //         let parent = this.parentElement;
+    menuItems.forEach(item => {
+      const link = item.querySelector('.main-navigation__link');
+      const sublist = item.querySelector('.main-navigation__sublist');
 
-  //         // Проверяем, есть ли у родителя класс 'active'
-  //         if (parent.classList.contains('menu-accordion-active')) {
-  //           // Если класс есть - удаляем его
-  //           parent.classList.remove('menu-accordion-active');
-  //         } else {
-  //           // Если класса нет - добавляем его
-  //           parent.classList.add('menu-accordion-active');
-  //         }
-  //       });
-  //     });
-  //   };
+      // Проверка, содержит ли элемент списка подсписок
+      if (sublist) {
+        // Отмена действия по умолчанию при клике на ссылку
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          // Добавление или удаление класса 'active' на ссылку
+          this.classList.toggle('active');
+        });
+      }
+    });
+
+  };
   // простые табы в карточке товара
   const tabs = document.querySelectorAll(".tabs__link");
   const contents = document.querySelectorAll(".tabs__details");
@@ -117,18 +123,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-    //   // слайдер со статьями в карточке товара
-    if (document.querySelector('.product__articles-slider .mySwiper')) {
-      console.log('Слайдер со статьями в карточке товара есть!');
-      var productArticlesSlider = new Swiper(".product__articles-slider .mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 25,
-        navigation: {
-          nextEl: ".product__articles-slider .swiper-button-next",
-          prevEl: ".product__articles-slider .swiper-button-prev",
-        },
-      });
-    };
+  //   // слайдер со статьями в карточке товара
+  if (document.querySelector('.product__articles-slider .mySwiper')) {
+    console.log('Слайдер со статьями в карточке товара есть!');
+    var productArticlesSlider = new Swiper(".product__articles-slider .mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 25,
+      navigation: {
+        nextEl: ".product__articles-slider .swiper-button-next",
+        prevEl: ".product__articles-slider .swiper-button-prev",
+      },
+    });
+  };
 
   //   // слайдер со статьями
   if (document.querySelector('#card-slider-2 .mySwiper')) {
